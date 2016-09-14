@@ -1,12 +1,118 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<title>Седона</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="header-page"><!--Шапка сайта-->
+			<div class="header-top">
+				<div class="header-logo"><!--Блок для логотипа-->
+					<img src="#" alt="Sedona"><!--Вставить ссылку на логотип-->
+				</div>
+				<ul class="main-nav"><!--Меню вверху страницы-->
+					<li><a href="#">информация</a></li>
+					<li><a href="#">фото и видео</a></li>
+					<li><a href="#">карта штата</a></li>
+					<li><a href="#">гостиницы</a></li>
+				</ul>
+			</div>
+			<div class="header-pic"><!--Самое большое изображение вверху страницы-->
+				<img src="#" alt="Welcome to the gorgeus">
+			</div>
+		</div>
+		<div class="causes"><!--Причины, по которым Седона круче-->
+			<div class="causes-header">
+				<h1>седона - небольшой городок в аризоне, заслуживающий большего!</h1>
+				<p>рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
+			</div>
+			<div class="causes-items">
+				<ol>
+					<li class="causes-item">
+						<h2>настоящий город</h2>
+						<p>седона - не аттракцион для туристов, там течет своя жизнь</p>
+						<img src="#" alt="First cause">
+						<ul><!--Дополнительные фишки под первой основной причиной-->
+							<li class="causes-add-item">
+								<img src="#" alt="жилье">
+								<h3>жилье</h3>
+								<p>рекомендуем пожить в настоящем мотеле, все как в кино</p>
+							</li>
+							<li class="causes-add-item">
+								<img src="#" alt="еда">
+								<h3>еда</h3>
+								<p>всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+							</li>
+							<li class="causes-add-item">
+								<img src="#" alt="сувениры">
+								<h3>сувениры</h3>
+								<p>не только китайские, но и местного производства!</p>
+							</li>
+						</ul>
+					</li>
+					<li class="causes-item">
+						<img src="#" alt="Second cause">
+						<h2>там есть мост дьявола</h2>
+						<p>да, по нему можно пройти! если конечно вы осмелитесь</p>
+					</li>
+					<li class="causes-item">
+						<h3>небольшая площадь</h3>
+						<p>все достопримечательности находятся очень близко</p>
+					</li>
+					<li class="causes-item">
+						<h3>красивая дорога</h3>
+						<p>ехать в седону из лас-вегаса совсем не скучно!</p>
+					</li>
+					<li class="causes-item">
+						<h3>мало туристов</h3>
+						<p>большинство едет в гранд каньон и толпится там</p>
+					</li>
+				</ol>
+			</div>
+		</div>
+		<div class="search">
+			<div class="search-top">
+				<h4>заинтересовались?</h4>
+				<p>укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+				<a class="btn" href="#">поиск гостиницы в седоне</a><!--должна быть кнопкой. пока пусть отображается в виде ссылки, в дальнейшем надо будет сделать так, чтобы при нажатии на нее появлялась форма-->
+				<form class="search-form" method="get"><!--надо вставить атрибут "action", но я не знаю какой ставить-->
+					<div class="search-form-group">
+						<label for="hotel-come">дата заезда:</label>
+						<input type="date" name="hotel-come" id="hotel-come">
+					</div>
+					<div class="search-form-group">
+						<label for="hotel-leave">дата выезда:</label>
+						<input type="date" name="hotel-leave" id="hotel-leave">
+					</div>
+					<div class="search-form-group">
+						<label for="adults">взрослые:</label>
+						<input type="number" name="adults" id="adults">
+						<label for="children">дети:</label>
+						<input type="number" name="children" id="children">
+					</div>
+					<input type="submit" class="btn" value="найти">
+				</form>
+			</div>
+			<div class="search-map">
+				<!-- 
+				- Блок карты — достаточная реализация — обычное изображение.
+				- Блок карты — реализация по желанию — интерактивная карта, которая также масштабируется на 100% ширины.
+				-->
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer-visit">
+				#visitsedona
+			</div>
+			<div class="footer-social">
+				<a class="social-btn" href="https://vk.com/htmlacademy">Вконтакте</a>
+				<a class="social-btn" href="https://facebook.com/htmlacademy">Фейсбук</a>
+				<a class="social-btn" href="https://instagram.com/htmlacademy">Инстаграм</a>
+			</div>
+			<div class="footer-copyright">
+				<a href="https://htmlacademy.ru">website by htmlacademy</a>
+			</div>
+		</div>
+	</body>
 </html>
