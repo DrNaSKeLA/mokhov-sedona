@@ -6,18 +6,19 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        <div class="rubber">
         <div class="header-page"><!--Шапка сайта-->
-            <div class="header-top">
-                <div class="header-logo"><!--Блок для логотипа-->
+            <nav class="header-top">
+                <a class="header-logo"><!--Блок для логотипа-->
                     <img src="#" alt="Sedona"><!--Вставить ссылку на логотип-->
-                </div>
+                </a>
                 <ul class="main-nav"><!--Меню вверху страницы-->
                     <li><a href="#">информация</a></li>
                     <li><a href="#">фото и видео</a></li>
                     <li><a href="#">карта штата</a></li>
                     <li><a href="#">гостиницы</a></li>
                 </ul>
-            </div>
+            </nav>
             <div class="header-pic"><!--Самое большое изображение вверху страницы-->
                 <img src="#" alt="Welcome to the gorgeus">
             </div>
@@ -28,12 +29,17 @@
                 <p>рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
             </div>
             <div class="causes-items">
-                <ol>
-                    <li class="causes-item">
-                        <h2>настоящий город</h2>
-                        <p>седона - не аттракцион для туристов, там течет своя жизнь</p>
+                <div>
+                    <div class="causes-item-first-line">
+                        <div class="causes-item-text">
+                            <h2>настоящий город</h2>
+                            <p>- №1 -</p>
+                            <p>седона - не аттракцион для туристов, там течет своя жизнь</p>
+                        </div>
                         <img src="#" alt="First cause">
-                        <ul><!--Дополнительные фишки под первой основной причиной-->
+                    </div>
+                    <div class="causes-item-second-line"><!--Дополнительные фишки под первой основной причиной-->
+                        <ul>
                             <li class="causes-add-item">
                                 <img src="#" alt="жилье">
                                 <h3>жилье</h3>
@@ -50,25 +56,33 @@
                                 <p>не только китайские, но и местного производства!</p>
                             </li>
                         </ul>
-                    </li>
-                    <li class="causes-item">
+                    </div>
+                    <div class="causes-item-third-line">
                         <img src="#" alt="Second cause">
-                        <h2>там есть мост дьявола</h2>
-                        <p>да, по нему можно пройти! если конечно вы осмелитесь</p>
-                    </li>
-                    <li class="causes-item">
-                        <h3>небольшая площадь</h3>
-                        <p>все достопримечательности находятся очень близко</p>
-                    </li>
-                    <li class="causes-item">
-                        <h3>красивая дорога</h3>
-                        <p>ехать в седону из лас-вегаса совсем не скучно!</p>
-                    </li>
-                    <li class="causes-item">
-                        <h3>мало туристов</h3>
-                        <p>большинство едет в гранд каньон и толпится там</p>
-                    </li>
-                </ol>
+                        <div class="third-line-text">
+                            <h2>там есть мост дьявола</h2>
+                            <p>- №2 -</p>
+                            <p>да, по нему можно пройти! если конечно вы осмелитесь</p>
+                        </div>
+                    </div>
+                    <div class="causes-item-fourth-line">
+                        <div class="fourth-line-item">
+                            <h2>небольшая площадь</h2>
+                            <p>- №3 -</p>
+                            <p>все достопримечательности находятся очень близко</p>
+                        </div>
+                        <div class="fourth-line-item">
+                            <h2>красивая дорога</h2>
+                            <p>- №4 -</p>
+                            <p>ехать в седону из лас-вегаса совсем не скучно!</p>
+                        </div>
+                        <div class="fourth-line-item">
+                            <h2>мало туристов</h2>
+                            <p>- №5 -</p>
+                            <p>большинство едет в гранд каньон и толпится там</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="search">
@@ -76,26 +90,32 @@
                 <h4>заинтересовались?</h4>
                 <p>укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
                 <a class="btn" href="#">поиск гостиницы в седоне</a><!--должна быть кнопкой. пока пусть отображается в виде ссылки, в дальнейшем надо будет сделать так, чтобы при нажатии на нее появлялась форма-->
-                <form class="search-form" method="get"><!--надо вставить атрибут "action", но я не знаю какой ставить-->
-                    <div class="search-form-group">
+                <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+                    <fieldset class="search-form-group">
                         <label for="hotel-come">дата заезда:</label>
-                        <input type="date" name="hotel-come" id="hotel-come">
-                    </div>
-                    <div class="search-form-group">
+                        <input type="text" name="hotel-come" id="hotel-come">
+                        <button type="button"><img src="#" alt="Календарь"></button>
+                    </fieldset>
+                    <fieldset class="search-form-group">
                         <label for="hotel-leave">дата выезда:</label>
-                        <input type="date" name="hotel-leave" id="hotel-leave">
-                    </div>
-                    <div class="search-form-group">
+                        <input type="text" name="hotel-leave" id="hotel-leave">
+                        <button type="button"><img src="#" alt="Календарь"></button>
+                    </fieldset>
+                    <fieldset class="search-form-group">
                         <label for="adults">взрослые:</label>
-                        <input type="number" name="adults" id="adults">
+                        <button type="button"><img src="#" alt="Минус"></button>
+                        <input type="text" name="adults" id="adults">
+                        <button type="button"><img src="#" alt="Плюс"></button>
                         <label for="children">дети:</label>
-                        <input type="number" name="children" id="children">
-                    </div>
+                        <button type="button"><img src="#" alt="Минус"></button>
+                        <input type="text" name="children" id="children">
+                        <button type="button"><img src="#" alt="Плюс"></button>
+                    </fieldset>
                     <input type="submit" class="btn" value="найти">
                 </form>
             </div>
             <div class="search-map">
-
+                <img src="#" alt="Карта">
                 <!--
                 - Блок карты — достаточная реализация — обычное изображение.
                 - Блок карты — реализация по желанию — интерактивная карта, которая также масштабируется на 100% ширины.
@@ -103,7 +123,7 @@
             </div>
         </div>
         <div class="footer">
-            <div class="footer-visit">
+            <div class="hashtag">
                 #visitsedona
             </div>
             <div class="footer-social">
@@ -112,8 +132,9 @@
                 <a class="social-btn" href="https://instagram.com/htmlacademy">Инстаграм</a>
             </div>
             <div class="footer-copyright">
-                <a href="https://htmlacademy.ru">website by htmlacademy</a>
+                website by <a href="https://htmlacademy.ru"><img href="#" alt="htmlacademy"></a>
             </div>
+        </div>
         </div>
     </body>
 </html>
