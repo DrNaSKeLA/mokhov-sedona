@@ -19,11 +19,6 @@
                         <li><a href="#">гостиницы</a></li>
                     </ul>
                 </nav>
-            <!-- Это div для размытого изображения, но я думаю он делается фоном
-            <div class="header-pic"
-                <img src="#" alt="Фон для form.hotel-search-group">
-            </div>
-            -->
             </div>
             <div class="hotel-search">
                 <form class="hotel-search-group" action="https://echo.htmlacademy.ru" method="post">
@@ -43,20 +38,13 @@
                         <legend>стоимость в сутки (р)</legend>
                         <label>от<input type="text" name="range-from"></label>
                         <label>до<input type="text" name="range-to"></label>
-                        <div class="items-range">
-                            <div class="item-range"><img src="#" alt="Левый кружочек"></div>
-                            <div class="item-range"><img src="#" alt="Яркая линия"></div>
-                            <div class="item-range"><img src="#" alt="Правый кружочек"></div>
-                            <div class="item-range"><img src="#" alt="Тусклая линия"></div>
+                        <div class="search-item-range"><!-- Ползунок -->
+                            <div class="scale"><!-- Вся полоска -->
+                                <div class="bar"></div><!-- Яркая полоска -->
+                            </div>
+                            <div class="toggle toggle-min"><!-- Левый кружок -->
+                            <div class="toggle toggle-max"><!-- Правый кружок -->
                         </div>
-                        <!-- Либо второй вариант, не знаю как правильнее будет
-                        <div class="items-range">
-                            <img src="#" alt="Левый кружочек">
-                            <img src="#" alt="Яркая линия">
-                            <img src="#" alt="Правый кружочек">
-                            <img src="#" alt="Тусклая линия">
-                        </div>
-                        -->
                         <input type="submit" class="btn" value="показать">
                     </fieldset>
                 </form>
@@ -71,8 +59,8 @@
                         <a href="#">по рейтингу</a>
                     </div>
                     <div class="results-item-trigon">
-                        <img src="#" alt="К большему">
-                        <img src="#" alt="К меньшему">
+                        <a href="#"><img src="#" alt="К большему"></a>
+                        <a href="#"><img src="#" alt="К меньшему"></a>
                     </div>
                 </div>
                 <div class="results-item">
